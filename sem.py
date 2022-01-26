@@ -65,11 +65,19 @@
 #         return s
 # print(f(a))
 
+# 12. Удалить вторую цифру трехзначного числа
+# def deleteSecond(abc):
+#     c = abc%10
+#     a = (abc//100)
+#     ac = a*10 + c
+#     return ac
+# print (deleteSecond(409))
+
 # 18 Проверить истинность утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z
 # def logic(X, Y, Z):
 #     return not (X or Y or Z) == (not X and not Y and not Z)
 # for x in range (0,2):
-#     for y in range (0,3):
+#     for y in range (0,2):
 #         for z in range (0,2):
 #             print (logic(x, y, z))
 
@@ -88,6 +96,25 @@
 # else:
 #     print ('четвертая четверть')
 
+# 20. Задать номер четверти, показать диапазоны для возможных координат
+# QUARTER = \
+#     {
+#         1: 'X = (0;infinity); Y = (0;infinity)',
+#         2: 'X = (-infinity;0); Y = (0;infinity)',
+#         3: 'X = (-infinity;0); Y = (-infinity;0)',
+#         4: 'X = (0;infinity); Y = (-infinity;0)',
+#     }
+# A = int(input('Введите номер дня четверти:'))
+# print(QUARTER[A])
+
+# 21. Программа проверяет пятизначное число на полиндром
+# def Polin(r):
+#     a = r % 10
+#     b = (r%100)//10
+#     d = (r//1000)%10
+#     e = r//10000
+#     return a==e and b==d
+# print (Polin(92329))
 
 # 22. Найти расстояние между точками в пространстве 2D/3D
 # x1 = 5
@@ -97,6 +124,12 @@
 # d = (x2-x1)**2 + (y2-y1)**2
 # D = d**0.5
 # print(D)
+
+
+# 23. Показать таблицу квадратов чисел от 1 до N
+# def D(N):
+#     return [i**2 for i in range(1, N + 1)]
+# print(D(5))
 
 
 # 34. Написать программу замену элементов массива на противоположные
